@@ -66,7 +66,7 @@ export const UserCard: FC<Props> = ({ user }) => {
               </svg>
             </button>
             {isLoading && <p>Loading</p>}
-            <h1 className="text-center mt-5">{`Albums of ${name}`}</h1>
+            <h1 className="text-center mt-16 xl:mt-10">{`Albums of ${name}`}</h1>
             <div className="grid grid-cols-2 xl:grid-cols-3 gap-3 xl:gap-5 m-5 justify-items-start mt-12">
               {data && data.map((album: Album) => <AlbumCard album={album} />)}
             </div>
